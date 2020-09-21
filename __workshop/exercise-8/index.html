@@ -1,1 +1,45 @@
-<!-- ...crickets... -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 8</title>
+</head>
+<body>
+    <h2>Registration form</h2>
+    <form>
+        <label for="username">Username</label> 
+        <input type="text" id="username" name="username" required > 
+        <label for="pwd">password</label> 
+        <input type="password" id="pwd" name="pwd" required > 
+        <label for="email">Email</label> 
+        <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required >
+        <h3>Which taxi do you require?</h3>
+        <input type="radio" id="car" name="taxi" value="car" required >
+        <label for="car">Car</label>
+        <input type="radio" id="van" name="taxi" value="van">
+        <label for="van">Van</label>
+        <input type="radio" id="tuktuk" name="taxi" value="tuktuk">
+        <label for="tuktuk">Tuk Tuk</label>
+        <h3>Choose your extras</h3>
+        <input type="checkbox" id="babyseat" name="babyseat">
+        <label for="babyseat">Baby seat</label>
+        <input type="checkbox" id="wheelchair" name="wheelchair">
+        <label for="wheelchair">Wheelchair access</label>
+        <input type="checkbox" id="privacywindows" name="privacywindows">
+        <label for="privacywindows">Privacy windows</label>
+        <h3>Where would you like us to pick you up?</h3>
+        <label for="location">Pickup Location:</label>
+        <select id="location">
+            <option value="">Select one</option>
+            <option value="downtown">Downtown</option>
+            <option value="metro">Metro Station</option>
+            <option value="mall">At the mall</option>
+        </select>
+        <h3>Additional Instructions</h3>
+        <label for="special">Special</label>
+        <textarea id="special" name="special">provide special instructions here</textarea>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
